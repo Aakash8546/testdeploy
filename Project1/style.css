@@ -160,14 +160,22 @@ nav a:hover {
   color: purple;
   cursor: pointer;
 }
+ 
 
 
-.introAction .contactMe{
-  transform: scale(1.05);
-  background-color: transparent;
-  color: white;
+
+.introAction .contactMe {
+  background-color: (100,0,188);
+  color:white;
   cursor: pointer;
-} 
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.introAction .contactMe:hover {
+  transform: scale(1.05);
+  background-color: white;
+  color: rgb(100, 0, 188);
+}
 
 #about .section-title {
   font-size: 3rem;
